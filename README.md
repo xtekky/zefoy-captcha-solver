@@ -60,6 +60,9 @@ Love ❌ code ✅
 ## 💭・ChangeLog
 
 ```diff
+v0.0.2 ⋮ 2022-06-10
++ better response when solved
+
 v0.0.1 ⋮ 2022-06-10
 + initial commit
 ```
