@@ -1,0 +1,6 @@
+numpy==1.22.3
+opencv-python==4.6.0.66
+pyenchant==3.2.2
+pytesseract==0.3.9
+requests==2.27.1
+PIL-Tools==1.1.0
