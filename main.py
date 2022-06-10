@@ -104,7 +104,7 @@ class Solver:
                         )
 
                     if "c2VuZF9mb2xsb3dlcnNfdGlrdG9r" in _response.text:
-                        print("SOLVED", time.time() - self.start)
+                        print(f"SOLVED | Time: {time.time() - self.start}s | Trials: {self.reqs} | Sessid: {sessid}")
                         sys.exit('solved successfully')
                     else:
                         pass
