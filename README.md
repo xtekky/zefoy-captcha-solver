@@ -8,7 +8,7 @@
 
 <p align="center"> 
   <kbd>
-<img src="https://cdn.discordapp.com/attachments/979841729538687017/980520605415768114/03-gflitch.jpg"></img>
+<img src="https://cdn.discordapp.com/attachments/956638416064376875/984798143755481118/3b459bc61bb8a51f74c0d3a80c3a7b1f1.jpg?size=4096"></img>
   </kbd>
 </p>
 
