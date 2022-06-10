@@ -13,16 +13,15 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/languages/top/xtekky/Twitch-Account-Gen?style=flat-square" </a>
-  <img src="https://img.shields.io/github/last-commit/xtekky/Twitch-Account-Gen?style=flat-square" </a>
-  <img src="https://img.shields.io/github/stars/xtekky/Twitch-Account-Gen?color=7F9DE0&label=Stars&style=flat-square" </a>
-  <img src="https://img.shields.io/github/forks/xtekky/Twitch-Account-Gen?color=7F9DE0&label=Forks&style=flat-square" </a>
+  <img src="https://img.shields.io/github/languages/top/xtekky/zefoy-captcha-solver?style=flat-square" </a>
+  <img src="https://img.shields.io/github/last-commit/xtekky/zefoy-captcha-solver?style=flat-square" </a>
+  <img src="https://img.shields.io/github/stars/xtekky/zefoy-captcha-solver?color=7F9DE0&label=Stars&style=flat-square" </a>
+  <img src="https://img.shields.io/github/forks/xtekky/zefoy-captcha-solver?color=7F9DE0&label=Forks&style=flat-square" </a>
 </p>
 
 <h4 align="center">
-  <a href="https://discord.gg">🌌・Discord</a>
-  <a href="https://github.com/xtekky/Twitch-Account-Gen#license">💻・License</a>
-  <a href="https://github.com/xtekky/Twitch-Account-Gen#changelog">📜・ChangeLog</a>
+  <a href="https://discord.gg/onlp">🌌・Discord</a>
+  <a href="https://github.com/xtekky/zefoy-captcha-solver#changelog">📜・ChangeLog</a>
 </h4>
 
 <h2 align="center">
