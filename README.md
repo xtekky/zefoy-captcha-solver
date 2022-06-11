@@ -39,7 +39,7 @@ Love ❌ code ✅
 
 ---
 
-## 🚀・Setup Twitch Acc Gen
+## 🚀・Zefoy Captcha Solver
 
 ```sh-session
 > Install python and pip
