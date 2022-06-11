@@ -67,6 +67,54 @@ v0.0.1 ⋮ 2022-06-10
 + initial commit
 ```
 
+## 💭・Filter Example
+```python
+import os, cv2, numpy, pytesseract, PIL, re, enchant
+from tkinter import W
+import scipy.ndimage as ndimage
+import matplotlib.pyplot as plt
+
+file = cv2.imread(f"./captcha.png")
+thresh, im_bw = cv2.threshold(file, 200, 260, cv2.THRESH_BINARY)
+_name = f'./enhanced.png'
+b = cv2.imwrite(_name, im_bw)
+def bbox(im):
+    a = numpy.array(im)[:,:,:3]
+    m = numpy.any(a != [255, 255, 255], axis=2)
+    coords = numpy.argwhere(m)
+    y0, x0, y1, x1 = *numpy.min(coords, axis=0), *numpy.max(coords, axis=0)
+    return (x0, y0+1, x1-1, y1-1)
+
+im = PIL.Image.open(_name)
+im2 = im.crop(bbox(im))
+im2.save(_name)
+
+
+image = PIL.Image.open(_name)
+inverted_image = PIL.ImageOps.invert(image)
+inverted_image.save(_name)
+
+im = PIL.Image.open(_name)
+im2 = im.crop(bbox(im))
+im2.save(_name)
+
+basewidth = 700
+img = PIL.Image.open(_name)
+wpercent = (basewidth/float(img.size[0]))
+hsize = int((float(img.size[1])*float(wpercent)))
+img = img.resize((basewidth,hsize), PIL.Image.ANTIALIAS)
+img.save(_name)
+
+cv2.imwrite(_name, cv2.threshold(cv2.dilate(cv2.threshold(cv2.imread(_name), 115, 255, cv2.THRESH_BINARY_INV)[1], cv2.getStructuringElement(cv2.MORPH_RECT, (3,3)), iterations=1), 115, 255, cv2.THRESH_BINARY_INV)[1])
+
+ocr = pytesseract.image_to_string(_name, lang='eng', config='--psm 6 --oem 3')
+captcha = str(ocr)
+
+if captcha != "" and not None or not None:
+                _captcha = re.compile('[^a-zA-Z]').sub('', captcha).lower()
+                print(_captcha)
+```
+
 <p align="center">
   README.md inspired from Rdimo
 </p>
