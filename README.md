@@ -114,6 +114,12 @@ if captcha != "" and not None or not None:
                 _captcha = re.compile('[^a-zA-Z]').sub('', captcha).lower()
                 print(_captcha)
 ```
+### Before
+![captcha](https://user-images.githubusercontent.com/98614666/173166442-dab67c1b-6b90-49e3-a3df-85d69797c68b.png)
+### After
+![enhanced](https://user-images.githubusercontent.com/98614666/173166447-82fd2154-e98d-41dc-ac49-0b6b1105da8a.png)
+
+
 
 <p align="center">
   README.md inspired from Rdimo
