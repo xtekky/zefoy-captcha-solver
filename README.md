@@ -67,7 +67,7 @@ v0.0.1 ⋮ 2022-06-10
 + initial commit
 ```
 
-## 💭・Filter Example
+## x・Filter Example
 ```python
 import os, cv2, numpy, pytesseract, PIL, re, enchant
 from tkinter import W
@@ -114,9 +114,11 @@ if captcha != "" and not None or not None:
                 _captcha = re.compile('[^a-zA-Z]').sub('', captcha).lower()
                 print(_captcha)
 ```
-### Before
+
+## x・Comparison
+#### Before
 ![captcha](https://user-images.githubusercontent.com/98614666/173166442-dab67c1b-6b90-49e3-a3df-85d69797c68b.png)
-### After
+#### After
 ![enhanced](https://user-images.githubusercontent.com/98614666/173166447-82fd2154-e98d-41dc-ac49-0b6b1105da8a.png)
 
 
