@@ -6,8 +6,7 @@
 > python example:
 
 ```py
-import base64
-import requests
+import base64, requests
 
 with open("captcha.png", "rb") as x:
     image_bytes = x.read()
