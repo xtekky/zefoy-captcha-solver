@@ -1,22 +1,25 @@
-> OCR API:
-- endpoint: https://api.xtekky.com/ocr
-- method: POST
-- json-data: `{"image":"base64 encoded image bytes"}`
-
-> python example:
 
 ```py
-import base64, requests
+json_data =  {
+    "requests": [{
+        "image": {
+            "content": "base64 encoded image"
+        },
+        "features": [{"type": "TEXT_DETECTION"}]
+    }]
+}
 
-with open("captcha.png", "rb") as x:
-    image_bytes = x.read()
-
-r = requests.post(
-    url = "https://api.xtekky.com/ocr",
-    json = {
-        "image": base64.b64encode(image_bytes).decode(),
-    }
+req = requests.post(
+    url = 'https://content-vision.googleapis.com/v1/images:annotate',
+    headers = {
+        'x-origin': 'https://explorer.apis.google.com',
+    },
+    params = {
+        'alt': 'json',
+        'key': 'AIzaSyAa8yy0GdcGPHdtD083HiGGx_S0vMPScDM',
+    },
+    json = json_data
 )
 
-print(r.text)
+print(req.json())
 ```
